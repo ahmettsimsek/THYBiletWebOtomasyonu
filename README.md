@@ -24,3 +24,4 @@
     ****"SQLDönemProjesi" adlı word belgesinde projenin çalışan ekran çıktıları, veritabanı içerisinde kullandığım tablo ve ilişkileri,
     diagram, SP, trigger ve fonksiyon  detaylandırılarak yazılmıştır.
 
+![AnaGirişEkranı](https://github.com/ahmettsimsek/THYBiletWebOtomasyonu/assets/124433579/d020471b-43bf-49a9-b5da-4a3abbdc4fae)
