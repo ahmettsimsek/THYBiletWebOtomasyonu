@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Personel.master.cs" Inherits="THYBiletWebOtomasyonu.Personel" %>
+
+<!DOCTYPE html>
+<html>
+
+<%--bu kısmı soldaki panel yapısı için kullanıcaz--%>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>TÜRK HAVA YOLLARI</title>
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="Dosyalar1/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="Dosyalar1/YeniStyleSheet4.css" rel="stylesheet" />
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menüler</h3>
+                <strong>BS</strong>
+            </div>
+
+                <ul class="list-unstyled components">
+        <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fas fa-home"></i><%--bu kod parçası ile sol sutunlarımızın onune ımage ekledik--%>
+                Hesap Bilgileri
+            </a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="PersonelListesi.aspx"><i class="glyphicon glyphicon-list"></i>Kayıtlı Personel Listesi</a>    <%--<i class="glyphicon glyphicon-adjust"></i> ile alt seçeneklere de image ekledim--%>
+                </li>
+                <li>
+                    <a href="PersonelEkle.aspx"><i class="glyphicon glyphicon-upload"></i>Personel Ekle</a>  <%-- href kısımna yazarak ogrenci ekle seceneğine basınca o sayfaya yonlendirir--%>
+                </li>
+                
+
+            </ul>
+        </li>
+      
+
+      
+    </ul>
+
+    <div style="margin-left:10px"> MERHABA, Nereyi keşfetmek istiyorsunuz? </div>
+   
+    <div><asp:Image ID="Image2" runat="server" Height="200px" ImageUrl="Turkish-Airlines-Emblem .png"  Width="200px"/>  </div>
+
+</nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="Dosyalar1/jquery-1.12.0.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="Dosyalar1/js-bootstrap.min.js"></script>
+
+    <!-- script src dosyalarını değiştirdik çünkü yarın bürgun siteler kalakrsa linkler çalışmaz ornegin home kısmına tıklıyamassın -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
