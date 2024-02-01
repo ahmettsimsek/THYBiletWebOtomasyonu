@@ -1,7 +1,7 @@
 # THYBiletWebOtomasyonu
 # Hava Yolları Bilet Alım Web Otomasyonu
 
-# "THYBiletWebOtomasyonuVisualStudio" klasöründen "THYBiletWebOtomasyonu.sln" visual studio kod dosyamın açılması gerekmektedir. Dosya açıldıktan sonra;
+    "THYBiletWebOtomasyonuVisualStudio" klasöründen "THYBiletWebOtomasyonu.sln" visual studio kod dosyamın açılması gerekmektedir. Dosya açıldıktan sonra;
 
     # a)Çözüm gezgini kısmına geliniz,
     #b)LoginPanel.aspx webForm sayfasına çift tıklayınız,
