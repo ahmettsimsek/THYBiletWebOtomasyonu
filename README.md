@@ -1,4 +1,4 @@
-# THYBiletWebOtomasyonu
+# THYBiletWebOtomasyonu (ASP.NET + SQL SERVER)
 # Hava Yolları Bilet Alım Web Otomasyonu
 
     İLK OLARAK;
